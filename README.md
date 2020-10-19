@@ -3,14 +3,14 @@
 ### BE development flow
 
 1. Go to `frontend` dir and build maven project - `mvn clean install`
-2. Go to `backend` dir and start spring boot - `./mvnw spring-boot:run`
+2. Go to `backend` dir and start spring boot - `mvn clean tomcat7:run`
 3. Go to http://localhost:8080/
 4. Credentials - `user/password`
 
 ### FE development flow with local BE
 
 1. Go to `frontend` dir and build maven project - `mvn clean install`
-2. Go to `backend` dir and start spring boot - `./mvnw spring-boot:run`
+2. Go to `backend` dir and start spring boot - `mvn clean tomcat7:run`
 3. Go to `frontend` dir and build maven project - `npm start`
 4. Go to http://localhost:4200/
 5. Credentials - `user/password`
