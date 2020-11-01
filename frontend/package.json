@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxyConfig=proxy.conf.js --servePath=spa/ --baseHref=/spa/",
-    "build": "ng build --prod --baseHref=/spa/",
+    "start": "ng serve --proxyConfig=proxy.conf.js --servePath=dev/spa/ --baseHref=/dev/spa/",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

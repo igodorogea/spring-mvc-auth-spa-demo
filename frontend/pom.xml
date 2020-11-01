@@ -51,7 +51,7 @@
               <goal>npm</goal>
             </goals>
             <configuration>
-              <arguments>run build</arguments>
+              <arguments>run build -- --baseHref=/dev/spa/</arguments>
             </configuration>
           </execution>
         </executions>

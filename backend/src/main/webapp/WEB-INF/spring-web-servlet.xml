@@ -30,7 +30,7 @@
             </list>
         </property>
     </bean>
-    <mvc:resources mapping="/spa/**" location="classpath:/static/spa/"/>
+    <mvc:resources mapping="/spa/**" location="classpath:/static/spa/" cache-period="31536000" />
     <mvc:annotation-driven/>
     <mvc:default-servlet-handler/>
 

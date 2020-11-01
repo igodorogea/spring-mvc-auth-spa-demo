@@ -6,7 +6,7 @@ const conf = {
   baseDir: "src",
   localDomain: "http://localhost:4200",
   remoteDomain: "http://localhost:8080",
-  startPath: "/spa",
+  startPath: "/dev/spa",
 };
 
 function fileExists(baseDir, request) {
@@ -45,7 +45,7 @@ const PROXY_CONFIG = {
     bypass: function (req, res, proxyOptions) {
       console.log("bypass");
       console.log(req.url);
-      if (req.url.includes(conf.startPath, 0)) {
+      if (req.url.indexOf(conf.startPath) === 0) {
         return req.url;
       }
     },

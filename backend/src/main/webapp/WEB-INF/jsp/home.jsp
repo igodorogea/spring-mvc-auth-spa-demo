@@ -11,6 +11,7 @@
         <a href="${pageContext.request.contextPath}/page1">JSP Page 1</a>
         <a href="${pageContext.request.contextPath}/spa">SPA Home</a>
         <a href="${pageContext.request.contextPath}/spa/page1">SPA Page 1</a>
+        <a href="${pageContext.request.contextPath}/spa/deep/nested/page">SPA Deep Nested Page</a>
     </nav>
 
     <h1>JSP Home page</h1>

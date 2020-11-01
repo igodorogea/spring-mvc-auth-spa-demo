@@ -20,6 +20,13 @@ import { HomeComponent } from './home/home.component';
         loadChildren: () =>
           import('./page1/page1.module').then((m) => m.Page1Module),
       },
+      {
+        path: 'deep/nested/page',
+        loadChildren: () =>
+          import('./deep-nested-page/deep-nested-page.module').then(
+            (m) => m.DeepNestedPageModule
+          ),
+      },
     ]),
   ],
   providers: [],

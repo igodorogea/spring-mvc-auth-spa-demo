@@ -11,7 +11,7 @@ public class SpaController {
         return "forward:/spa/index.html";
     }
 
-    @RequestMapping(value = "/spa/{[path:[^.]*}", method = RequestMethod.GET)
+    @RequestMapping(value = "/spa/**/{path:[^.]*}", method = RequestMethod.GET)
     public String redirect() {
         return "forward:/spa/index.html";
     }
